@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "https://raw.githubusercontent.com/SahanaADF/SahanaADFRepository/refs/heads/LAndingADF/DimAirline.csv"
+				"relativeUrl": "SahanaADF/SahanaADFRepository/refs/heads/LAndingADF/DimAirline.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
