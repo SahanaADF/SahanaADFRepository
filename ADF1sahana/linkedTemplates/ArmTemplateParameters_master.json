@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF1sahana"
+		},
+		"LinkedService_OnPremise_password": {
+			"value": ""
+		},
+		"GitHub1_credential": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"HttpServer1_password": {
+			"value": ""
+		},
+		"LinkedService_OnPremise_properties_typeProperties_host": {
+			"value": "‪\\Users\\vinay\\Downloads\\"
+		},
+		"LinkedService_OnPremise_properties_typeProperties_userId": {
+			"value": "desktop-gllttbs\\vinay"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvalutsahana.vault.azure.net/"
+		},
+		"GitHub1_properties_typeProperties_username": {
+			"value": "SahanaADF"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://firstdatalakesahana.dfs.core.windows.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "SahanaADF"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
