@@ -73,7 +73,13 @@
 							"outputs": [
 								{
 									"referenceName": "ParameterisedOutput",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"pFileName": {
+											"value": "@item().FileName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
