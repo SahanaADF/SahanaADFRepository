@@ -1,0 +1,18 @@
+{
+	"name": "gitToADF",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "SahanaADF/SahanaADFRepository/refs/heads/LAndingADF/DimAirport.json"
+			}
+		},
+		"schema": {}
+	}
+}
