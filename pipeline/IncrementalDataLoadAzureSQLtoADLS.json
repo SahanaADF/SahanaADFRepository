@@ -171,7 +171,7 @@
 						"type": "JsonSource",
 						"additionalColumns": [
 							{
-								"name": "LastLoad_column",
+								"name": "LastLoad",
 								"value": {
 									"value": "@activity('LatestLoad').output.firstRow.latestLoad",
 									"type": "Expression"
