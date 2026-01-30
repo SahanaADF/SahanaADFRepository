@@ -1,0 +1,21 @@
+{
+	"name": "incrementalparquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "incrementalOutputParquet",
+				"folderPath": "Incremental",
+				"fileSystem": "bronzesahana"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
