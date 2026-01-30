@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "empty.json",
 				"folderPath": "Incremental/emptyjson",
 				"fileSystem": "bronzesahana"
 			}
