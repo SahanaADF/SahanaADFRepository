@@ -41,7 +41,23 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "derivedColumn1"
+				},
+				{
+					"name": "select1"
+				},
+				{
+					"name": "derivedColumn2"
+				},
+				{
+					"name": "filter1"
+				},
+				{
+					"name": "cast1"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          airline_id as short,",
@@ -95,7 +111,22 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
-				"     documentForm: 'documentPerLine') ~> Airport"
+				"     documentForm: 'documentPerLine') ~> Airport",
+				"Airlines derive(country = upper(country)) ~> derivedColumn1",
+				"Flight select(mapColumn(",
+				"          flight_id,",
+				"          flight_number,",
+				"          departure_time,",
+				"          arrival_time",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"Passenger derive(full_name = split(full_name, \" \")[1]+split(full_name, \" \")[2]) ~> derivedColumn2",
+				"cast1 filter(age > 25 && country != 'Mexico') ~> filter1",
+				"derivedColumn2 cast(output(",
+				"          age as short '000'",
+				"     ),",
+				"     errors: true) ~> cast1"
 			]
 		}
 	}
