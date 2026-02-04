@@ -204,7 +204,7 @@
 				"     broadcast: 'auto')~> join2",
 				"join2 window(desc(ticket_cost, true),",
 				"     top = denseRank()) ~> window1",
-				"window1 alterRow(insertIf(1==1)) ~> alterRow2",
+				"window1 alterRow(insertIf(airline_name == 'Lufthansa')) ~> alterRow2",
 				"alterRow1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     format: 'delta',",
