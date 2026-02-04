@@ -5,38 +5,50 @@
 		"factoryName": {
 			"value": "ADF1sahana"
 		},
-		"LinkedService_OnPremise_password": {
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
 		"GitHub1_credential": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_accountKey": {
-			"value": ""
-		},
 		"HttpServer1_password": {
 			"value": ""
 		},
-		"LinkedService_OnPremise_properties_typeProperties_host": {
-			"value": "‪\\Users\\vinay\\Downloads\\"
+		"LinkedService_OnPremise_password": {
+			"value": ""
 		},
-		"LinkedService_OnPremise_properties_typeProperties_userId": {
-			"value": "desktop-gllttbs\\vinay"
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://firstdatalakesahana.dfs.core.windows.net/"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://keyvalutsahana.vault.azure.net/"
 		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "adfsqlserversahana.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "ADFSQLserverPractice"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "adminadmin"
+		},
 		"GitHub1_properties_typeProperties_username": {
 			"value": "SahanaADF"
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://firstdatalakesahana.dfs.core.windows.net/"
 		},
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/"
 		},
 		"HttpServer1_properties_typeProperties_userName": {
 			"value": "SahanaADF"
+		},
+		"LinkedService_OnPremise_properties_typeProperties_host": {
+			"value": "‪\\Users\\vinay\\Downloads\\"
+		},
+		"LinkedService_OnPremise_properties_typeProperties_userId": {
+			"value": "desktop-gllttbs\\vinay"
 		},
 		"containerUri": {
 			"value": ""
