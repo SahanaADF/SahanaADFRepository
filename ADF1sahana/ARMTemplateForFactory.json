@@ -612,6 +612,30 @@
 								"parameters": {}
 							}
 						]
+					},
+					{
+						"name": "Execute Pipeline1",
+						"type": "ExecutePipeline",
+						"dependsOn": [
+							{
+								"activity": "Copy data1",
+								"dependencyConditions": [
+									"Failed"
+								]
+							}
+						],
+						"policy": {
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"pipeline": {
+								"referenceName": "webAPI Pipeline",
+								"type": "PipelineReference"
+							},
+							"waitOnCompletion": true,
+							"parameters": {}
+						}
 					}
 				],
 				"policy": {
@@ -621,7 +645,8 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]",
-				"[concat(variables('factoryId'), '/datasets/Parquet1')]"
+				"[concat(variables('factoryId'), '/datasets/Parquet1')]",
+				"[concat(variables('factoryId'), '/pipelines/webAPI Pipeline')]"
 			]
 		},
 		{
@@ -1665,7 +1690,7 @@
 						"     broadcast: 'auto')~> join2",
 						"join2 window(desc(ticket_cost, true),",
 						"     top = denseRank()) ~> window1",
-						"window1 alterRow(insertIf(1==1)) ~> alterRow2",
+						"window1 alterRow(insertIf(airline_name=='Lufthansa')) ~> alterRow2",
 						"alterRow1 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     format: 'delta',",
