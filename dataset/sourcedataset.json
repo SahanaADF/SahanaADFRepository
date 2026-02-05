@@ -1,0 +1,16 @@
+{
+	"name": "sourcedataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Sales_Staging"
+		}
+	}
+}
