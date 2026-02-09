@@ -11,6 +11,9 @@
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
 		"GitHub1_credential": {
 			"value": ""
 		},
@@ -18,6 +21,9 @@
 			"value": ""
 		},
 		"LinkedService_OnPremise_password": {
+			"value": ""
+		},
+		"ls_AzSQL_password": {
 			"value": ""
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
@@ -35,6 +41,15 @@
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"value": "adminadmin"
 		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "adfsqlserversahana.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "ADFSQLserverPractice"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "adminadmin"
+		},
 		"GitHub1_properties_typeProperties_username": {
 			"value": "SahanaADF"
 		},
@@ -49,6 +64,15 @@
 		},
 		"LinkedService_OnPremise_properties_typeProperties_userId": {
 			"value": "desktop-gllttbs\\vinay"
+		},
+		"ls_AzSQL_properties_typeProperties_server": {
+			"value": "adfsqlserversahana.database.windows.net"
+		},
+		"ls_AzSQL_properties_typeProperties_database": {
+			"value": "ADFSQLserverPractice"
+		},
+		"ls_AzSQL_properties_typeProperties_userName": {
+			"value": "adminadmin"
 		}
 	}
 }
