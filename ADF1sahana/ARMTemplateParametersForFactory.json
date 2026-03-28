@@ -1,0 +1,78 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF1sahana"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"GitHub1_credential": {
+			"value": ""
+		},
+		"HttpServer1_password": {
+			"value": ""
+		},
+		"LinkedService_OnPremise_password": {
+			"value": ""
+		},
+		"ls_AzSQL_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://firstdatalakesahana.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvalutsahana.vault.azure.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "adfsqlserversahana.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "ADFSQLserverPractice"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "adminadmin"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "adfsqlserversahana.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "ADFSQLserverPractice"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "adminadmin"
+		},
+		"GitHub1_properties_typeProperties_username": {
+			"value": "SahanaADF"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "SahanaADF"
+		},
+		"LinkedService_OnPremise_properties_typeProperties_host": {
+			"value": "‪\\Users\\vinay\\Downloads\\"
+		},
+		"LinkedService_OnPremise_properties_typeProperties_userId": {
+			"value": "desktop-gllttbs\\vinay"
+		},
+		"ls_AzSQL_properties_typeProperties_server": {
+			"value": "adfsqlserversahana.database.windows.net"
+		},
+		"ls_AzSQL_properties_typeProperties_database": {
+			"value": "ADFSQLserverPractice"
+		},
+		"ls_AzSQL_properties_typeProperties_userName": {
+			"value": "adminadmin"
+		}
+	}
+}

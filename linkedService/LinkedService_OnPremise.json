@@ -1,0 +1,17 @@
+{
+	"name": "LinkedService_OnPremise",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "‪\\Users\\vinay\\Downloads\\",
+			"userId": "desktop-gllttbs\\vinay",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5OTljOGJlMC1iZjQ1LTQ3ZmMtYWVhMi1lNTEyNjk2NTkxMTEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1Sahana",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

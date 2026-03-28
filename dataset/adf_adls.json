@@ -1,0 +1,19 @@
+{
+	"name": "adf_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "WEBAPI",
+				"fileSystem": "bronzesahana"
+			}
+		},
+		"schema": {}
+	}
+}
